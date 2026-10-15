@@ -80,3 +80,8 @@ htmlcov/
 # Experiment tracking
 wandb/
 runs/
+
+# Node / Frontend
+node_modules/
+.vite/
+
