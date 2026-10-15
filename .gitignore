@@ -1,0 +1,82 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Large geospatial data & raw imagery (Rule R6: NEVER commit data)
+data/
+*.tif
+*.tiff
+*.nc
+*.h5
+*.hdf
+*.tar.gz
+*.zip
+*.parquet
+*.feather
+*.gpkg
+*.geojson
+!configs/*.yaml
+!configs/*.json
+
+# Model weights & checkpoints (Rule R6: NEVER commit weights)
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+checkpoints/
+models_weights/
+
+# Evaluation data (EMSR927, published damage maps)
+evaluation/
+*.shp
+*.shx
+*.dbf
+*.prj
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Experiment tracking
+wandb/
+runs/

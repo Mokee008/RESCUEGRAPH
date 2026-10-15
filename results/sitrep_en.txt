@@ -1,0 +1,32 @@
+================================================================================
+FLOODSAT SITUATION REPORT (SITREP) — DISASTER INTELLIGENCE
+Event: Trishuli River Basin, Nepal
+Flood Date: 2026-08-02T00:00:00Z
+================================================================================
+
+1. SATELLITE FLOOD & DEBRIS EXTENT
+- Total Inundation Extent: 1.0 sq km
+- Debris / Riverbed Change Corridor: 0.0 sq km
+- Mean Inundation Model Confidence: 1.0
+- Mountain Radar Shadow False Positives Cleaned: 395
+
+2. INFRASTRUCTURE DAMAGE SUMMARY
+- Total Buildings Affected: 0
+  * Confirmed Flooded Buildings: 0
+  * Likely Affected Buildings: 0
+  * Uncertain Potential Impacts: 0
+- Total Road Corridors Damaged: 0.0 km
+  * Confirmed Blocked Roads: 0.0 km
+  * Likely Affected Road Segments: 0.0 km
+- Severed / Damaged Bridges: 0
+
+3. ISOLATED SETTLEMENTS & ACCESS
+- Total Cut-off Settlements: 0
+- Estimated Trapped Population: 0
+
+================================================================================
+MANDATORY ATTRIBUTIONS (Rule R5):
+"Contains modified Copernicus Sentinel data 2026."
+"Produced using Copernicus WorldDEM-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved."
+"(c) OpenStreetMap contributors."
+================================================================================

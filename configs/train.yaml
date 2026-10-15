@@ -1,0 +1,33 @@
+# Training Configuration for Multimodal Flood/Water Segmentation
+
+model:
+  architecture: "unetplusplus"
+  encoder_name: "resnet34"
+  encoder_weights: "imagenet"
+  in_channels: 6   # post_vv, post_vh, pre_vv, pre_vh, log_ratio_vv, hand/slope
+  classes: 3       # 0: background, 1: permanent_water, 2: flood
+
+training:
+  stage1:
+    dataset: "kuro_siwo"
+    epochs: 15
+    batch_size: 16
+    learning_rate: 0.0005
+    weight_decay: 0.0001
+    optimizer: "adamw"
+    scheduler: "cosine"
+    amp: true
+  stage2:
+    dataset: "sen1floods11"
+    epochs: 5
+    batch_size: 16
+    learning_rate: 0.0001
+
+loss:
+  dice_weight: 0.5
+  focal_weight: 0.5
+
+validation:
+  eval_frequency: 1
+  save_best_only: true
+  metric: "mean_iou"

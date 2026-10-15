@@ -1,0 +1,39 @@
+# Pipeline Configuration for FloodSat Engine
+
+experiment_name: "floodsat_default"
+seed: 42
+
+inputs:
+  allow_sentinel_1: true
+  allow_sentinel_2: true
+  allow_dem: true
+  allow_osm_preevent: true
+  max_osm_snapshot_date: "2026-07-27T00:00:00Z"
+
+sentinel_1:
+  polarizations: ["VV", "VH"]
+  relative_orbit_strict: true
+  max_orbit_diff_days: 12
+  speckle_filter: "lee"
+  speckle_window: 5
+
+sentinel_2:
+  max_cloud_cover_percent: 20.0
+  bands: ["B02", "B03", "B04", "B08"]
+
+dem:
+  source: "Copernicus-GLO-30"
+  slope_threshold_deg: 20.0
+  hand_threshold_m: 35.0
+
+inference:
+  patch_size: 512
+  overlap: 64
+  batch_size: 4
+  ensemble_models: 3
+  temperature: 1.15
+  fast_mode: false
+
+reporting:
+  languages: ["en", "ne"]
+  output_format: ["json", "pdf"]

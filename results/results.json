@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "platform": "FloodSat Disaster Intelligence",
+    "aoi_name": "Trishuli River Basin, Nepal",
+    "bbox": [
+      85.15,
+      27.95,
+      85.35,
+      28.15
+    ],
+    "event_date": "2026-08-02T00:00:00Z",
+    "generated_at": "2026-10-15T01:28:16.190529+00:00",
+    "attribution": "Contains modified Copernicus Sentinel data 2026. (c) OpenStreetMap contributors."
+  },
+  "flood_and_debris": {
+    "flood_extent_sq_km": 1.0,
+    "debris_extent_sq_km": 0.0,
+    "mean_confidence": 1.0,
+    "false_positives_cleaned": 395
+  },
+  "damage_assessment": {
+    "confirmed_buildings": 0,
+    "likely_buildings": 0,
+    "uncertain_buildings": 0,
+    "total_buildings_affected": 0,
+    "confirmed_roads_km": 0.0,
+    "likely_roads_km": 0.0,
+    "uncertain_roads_km": 0.0,
+    "total_roads_km_affected": 0.0,
+    "damaged_bridges_count": 0
+  },
+  "cutoff_settlements": {
+    "total_cut_off_settlements": 0,
+    "total_possibly_cut_off_settlements": 0,
+    "total_isolated_population": 0,
+    "sparse_osm_warning": "SPARSE OSM WARNING (Rule M5): Very few mapped roads or settlements exist in this Himalayan region. Connectivity estimates may be conservative. Field verification required.",
+    "settlements": []
+  }
+}
